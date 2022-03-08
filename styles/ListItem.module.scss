@@ -1,0 +1,43 @@
+.listItem {
+    border-radius: 70px;
+    display: flex;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    align-items: center;
+}
+
+.checkbox {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border: 1px solid #6231EC;
+    margin-right: 25px;
+}
+
+.checked {
+    background-color: #6231EC;
+    animation: checkAction 4s 0.5s infinite;
+}
+
+.slideUp {
+    /* animation: fade-in 2s; */
+    animation: fade-in 4s 1s infinite;
+}
+
+@keyframes fade-in {
+	from {
+        margin-top: 50vh;
+	}
+	to {
+        margin-top: 0;
+	}
+}
+
+@keyframes checkAction {
+    99.9% {
+        background-color: white;
+    }
+	to {
+        background-color: #6231EC;
+	}
+}
